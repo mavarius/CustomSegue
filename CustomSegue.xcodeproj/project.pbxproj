@@ -14,6 +14,8 @@
 		CC2AB9361C8BE64F007A3E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2AB9351C8BE64F007A3E15 /* Assets.xcassets */; };
 		CC2AB9391C8BE64F007A3E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2AB9371C8BE64F007A3E15 /* LaunchScreen.storyboard */; };
 		CC2AB9441C8BE64F007A3E15 /* CustomSegueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2AB9431C8BE64F007A3E15 /* CustomSegueTests.m */; };
+		CC2AB9501C8CB5AD007A3E15 /* BNRCustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2AB94F1C8CB5AD007A3E15 /* BNRCustomSegue.m */; };
+		CC2AB9521C8CCD8E007A3E15 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2AB9511C8CCD8E007A3E15 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		CC2AB93F1C8BE64F007A3E15 /* CustomSegueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSegueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2AB9431C8BE64F007A3E15 /* CustomSegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSegueTests.m; sourceTree = "<group>"; };
 		CC2AB9451C8BE64F007A3E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC2AB94E1C8CB5AD007A3E15 /* BNRCustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCustomSegue.h; sourceTree = "<group>"; };
+		CC2AB94F1C8CB5AD007A3E15 /* BNRCustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCustomSegue.m; sourceTree = "<group>"; };
+		CC2AB9511C8CCD8E007A3E15 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2AB9521C8CCD8E007A3E15 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		CC2AB91D1C8BE64F007A3E15 = {
 			isa = PBXGroup;
 			children = (
+				CC2AB9511C8CCD8E007A3E15 /* QuartzCore.framework */,
 				CC2AB9281C8BE64F007A3E15 /* CustomSegue */,
 				CC2AB9421C8BE64F007A3E15 /* CustomSegueTests */,
 				CC2AB9271C8BE64F007A3E15 /* Products */,
@@ -86,6 +93,8 @@
 				CC2AB92F1C8BE64F007A3E15 /* ViewController.h */,
 				CC2AB9301C8BE64F007A3E15 /* ViewController.m */,
 				CC2AB9321C8BE64F007A3E15 /* Main.storyboard */,
+				CC2AB94E1C8CB5AD007A3E15 /* BNRCustomSegue.h */,
+				CC2AB94F1C8CB5AD007A3E15 /* BNRCustomSegue.m */,
 				CC2AB9351C8BE64F007A3E15 /* Assets.xcassets */,
 				CC2AB9371C8BE64F007A3E15 /* LaunchScreen.storyboard */,
 				CC2AB93A1C8BE64F007A3E15 /* Info.plist */,
@@ -212,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2AB9311C8BE64F007A3E15 /* ViewController.m in Sources */,
+				CC2AB9501C8CB5AD007A3E15 /* BNRCustomSegue.m in Sources */,
 				CC2AB92E1C8BE64F007A3E15 /* AppDelegate.m in Sources */,
 				CC2AB92B1C8BE64F007A3E15 /* main.m in Sources */,
 			);
@@ -345,6 +355,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dancamp.CustomSegue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -356,6 +367,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dancamp.CustomSegue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
